@@ -1,20 +1,27 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ES1 {
+    public static double prodottoNum (double n1, double n2){
+        return n1*n2;
+    }
+    public static String stringConca(String s1, int n1){
+        return s1+n1;
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Inserisci 2 numeri e ricevera il loro prodotto");
         double n1 = scanner.nextDouble();
         double n2 = scanner.nextDouble();
         scanner.nextLine();
-        System.out.println("il prodotto è : " + n1 * n2);
+        System.out.println("il prodotto è : " + prodottoNum(n1, n2));
         System.out.println("Inserisci una stringa!");
 
         String stinga1 = scanner.nextLine();
 
         System.out.println("Bene! Ora inserisci un numero");
         int n3 = scanner.nextInt();
-        System.out.println("Eccoli concatenati :" + stinga1 + " " + n3);
+        System.out.println("Eccoli concatenati :" + stringConca(stinga1, n3));
         scanner.close();
 
         String[] lio = {"lio1", "lio2", "lio3", "lio4", "lio5"};
